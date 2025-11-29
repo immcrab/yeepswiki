@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yeeps Hide & Seek — Rules</title>
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, #fff7e0, #fff4cc);
+      font-family: 'Londrina Solid', cursive;
+      color: #222;
+    }
+    header {
+      background: #ffcf4b;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 6px solid #ffb100;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(8px);
+      transition: background 0.6s ease;
+    }
+    header.scrolled {
+      background: #ffcf4bd0;
+    }
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin-top: 40px;
+      color: #ff7b00;
+      cursor: pointer;
+      transition: color 0.4s ease;
+    }
+    h2:hover { color: #ffa21a; }
+
+    main {
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 0 #ffd36a;
+      max-width: 900px;
+      margin-bottom: 40px;
+      transition: transform 0.8s ease, box-shadow 0.8s ease, opacity 1.2s ease;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    ul { margin-left: 40px; }
+    li { font-size: 1.6rem; line-height: 1.4; }
+
+    /* Smooth expand */
+    .section-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 1.2s ease;
+    }
+    .section-content.open {
+      max-height: 2000px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Game Rules</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>General Rules</h2>
+      <div class="section-content">
+        <ul>
+          <li>No glitching, clipping, or exploiting map bugs.</li>
+          <li>No lag switching or intentional network manipulation.</li>
+          <li>No teaming between hiders and seekers unless the mode allows it.</li>
+          <li>No distracting players with loud sound spam or visual spam.</li>, clipping, or exploiting map bugs.</li>
+          <li>No hiding in out‑of‑bounds or unreachable areas.</li>
+          <li>No intentional lagging, crashing, or obstruction of gameplay.</li>
+          <li>Respect all players — no harassment or toxic behavior.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Hider Rules</h2>
+      <div class="section-content">
+        <ul>
+          <li>Hiders must stay within the map at all times.</li>
+          <li>No hiding inside objects not meant to be enterable.</li>
+          <li>No using cosmetics that intentionally blend invisibly into the map.</li> within the map at all times.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Seeker Rules</h2>
+      <div class="section-content">
+        <ul>
+          <li>No pretending to AFK to trick hiders unfairly.</li>
+          <li>No camping known hider spawn or respawn points.</li>
+          <li>No using camera glitches to see through objects.</li>
+          <li>No pinning hiders in corners using body physics.</li> hider exits intentionally.</li>
+          <li>No using camera angles to see behind walls.</li>
+          <li>The seeker must tag fairly — no forced body‑blocking.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Chat & Behavior</h2>
+      <div class="section-content">
+        <ul>
+          <li>No spam, insults, or false reporting.</li>
+          <li>No impersonating moderators or staff.</li>
+          <li>No begging for special roles or unfair game restarts.</li>
+          <li>No intentionally misleading players during gameplay.</li>
+          <li>No inappropriate or unsafe words.</li>, insults.</li>
+          <li>No misleading players about rules or gameplay.</li>
+          <li>Follow moderator instructions immediately.</li>
+        </ul>
+      </div>
+    </div>
+      <div class="card">
+      <h2>Movement Rules</h2>
+      <div class="section-content">
+        <ul>
+          <li>No speed-boost exploits or unintended momentum glitches.</li>
+          <li>No wall-bouncing or map-surfing to reach restricted ledges.</li>
+          <li>No macro-assisted movement.</li>
+          <li>No spam-jumping to gain unintended vertical height.</li>
+          <li>Players must follow any special movement rules per mode.</li>‑boost exploits or unintended momentum glitches.</li>
+          <li>You may not jump to areas that require map‑breaking mechanics.</li>
+          <li>No macro‑assisted movement.</li>
+          <li>Players must follow the round’s movement restrictions (if any).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Ability & Item Rules</h2>
+      <div class="section-content">
+        <ul>
+          <li>No ability stacking exploits.</li>
+          <li>No cancelling cooldowns through bugs or lag tricks.</li>
+          <li>No using items to push players out of bounds.</li>
+          <li>No ability loops that break intended round flow.</li>
+          <li>No throwing items into restricted or unreachable zones.</li> exploits.</li>
+          <li>Items must be used only as intended by game design.</li>
+          <li>No using items to clip through objects or terrain.</li>
+          <li>No infinite ability looping or cooldown resets through glitches.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Tagging & Round Flow</h2>
+      <div class="section-content">
+        <ul>
+          <li>Seekers must allow the full countdown before moving.</li>
+          <li>No tagging players before the round officially starts.</li>
+          <li>No interfering with mid-round events or map triggers.</li>
+          <li>No blocking or camping respawn areas.</li>
+          <li>Once a player is tagged, they must follow game instructions immediately.</li> the full countdown before moving.</li>
+          <li>No tagging players before the round officially starts.</li>
+          <li>No blocking respawn or regroup points.</li>
+          <li>Round results are final — do not argue with automated outcomes.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Map Etiquette</h2>
+      <div class="section-content">
+        <ul>
+          <li>No obstructing builds in Creative-mode.</li>
+          <li>No hiding inside purely decorative objects.</li>
+          <li>No accessing roofs or skybox ledges unless mode allows.</li>
+          <li>No using camera tricks to reveal hidden players.</li>
+          <li>Follow all map-specific rules displayed in-game.</li> intentionally.</li>
+          <li>Do not hide inside decorative assets not meant to be entered.</li>
+          <li>Do not use third‑person camera tricks to see into hidden zones.</li>
+          <li>Follow each map’s unique rule indicators and system messages.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Moderation Rules</h2>
+      <div class="section-content">
+        <ul>
+          <li>Moderators have final decision-making authority.</li>
+          <li>Follow all moderator instructions quickly and respectfully.</li>
+          <li>Do not argue with staff decisions during gameplay.</li>
+          <li>Repeated rule violations may lead to removal or bans.</li>
+          <li>Do not abuse reporting tools or submit false reports.</li> decision‑making authority.</li>
+          <li>Failure to comply with moderator instructions may result in removal.</li>
+          <li>Repeated rule‑breaking may result in temporary or permanent bans.</li>
+          <li>False reporting or abusing mod tools is not allowed.</li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+<script>
+  // Sticky header fade
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    header.classList.toggle('scrolled', window.scrollY > 30);
+  });
+
+  // Fade-in scroll animations
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('show');
+    });
+  }, { threshold: 0.2 });
+
+  cards.forEach(card => observer.observe(card));
+
+  // Expandable rule sections
+  const headers = document.querySelectorAll('h2');
+  headers.forEach(h => {
+    h.addEventListener('click', () => {
+      const content = h.nextElementSibling;
+      content.classList.toggle('open');
+    });
+  });
+</script>
+</body>
+</html>
